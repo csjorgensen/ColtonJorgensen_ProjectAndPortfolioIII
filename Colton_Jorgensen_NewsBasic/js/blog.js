@@ -12,6 +12,7 @@ musicPage.onload = function(){
 		for (var i= 0; i<data.mixes.length;i++){
 			mixes += '<article>';
 			mixes += '<p class="thumbnail"><img src="' + data.mixes[i].imageFile+'"alt"' +data.mixes[i].media+'"></p>';
+			mixes += '<h2 class="h2">'+data.mixes[i].mixName+'"></h2>';
 			mixes += '</article>';
 			
 			
@@ -22,6 +23,6 @@ musicPage.onload = function(){
 }
 
 
-musicPage.open('GET', 'https://ColtonJorgensen_ProjectAndPortfolioIII/Colton_Jorgensen_NewsBasic/mixDatabase.json',true);
-musicPage.send(null);
+musicPage.open('GET', 'https://ColtonJorgensen_ProjectAndPortfolioIII/zColton_Jorgensen_NewsBasic/mixDatabase.json',true);
+
 
