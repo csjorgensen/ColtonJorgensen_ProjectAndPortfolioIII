@@ -1,4 +1,4 @@
-document.querySelector("#blog h2").innerHTML = "New Text";
+document.querySelector("#blog h2").innerHTML = "DJ Colton Jorgensen";
 
 
 var musicPage = new XMLHttpRequest();
@@ -12,7 +12,7 @@ musicPage.onload = function(){
 		for (var i= 0; i<data.mixes.length;i++){
 			mixes += '<article>';
 			mixes += '<p class="thumbnail"><img src="' + data.mixes[i].imageFile+'"alt"' +data.mixes[i].media+'"></p>';
-			mixes += '<h2 class="h2">'+data.mixes[i].mixName+'"></h2>';
+			mixes += '<h3 class="h2">'+data.mixes[i].mixName+'"></h3>';
 			mixes += '</article>';
 			
 			
@@ -24,5 +24,5 @@ musicPage.onload = function(){
 
 
 musicPage.open('GET', 'https://ColtonJorgensen_ProjectAndPortfolioIII/zColton_Jorgensen_NewsBasic/mixDatabase.json',true);
-
+musicPage.send('null');
 

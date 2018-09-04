@@ -1,14 +1,14 @@
-{"mixes" : [
+var mixes : [
 	{"mixName": "Into The Groove", 
-	"imageFile":"https://drive.google.com/open?id=1pehmp54v1NosdbcfExejejmC8e5hsTt4",
+	"imageFile":"images/intothegroove.png",
 	"DateRecorded":"01-25-2018",
 	"Genre":"House"},{
 	"mixName":"In Through the ear, Straight to the Heart",
-	"imageFile":"https://drive.google.com/open?id=1e7VA76xIA6XuZomiPNro0xIR5YGVGHjV",
+	"imageFile":"images/In through the ear straight to the heart.png",
 	"DateRecorded":"04-23-2018",
 	"Genre":"Tribal House"},
 	{"mixName": "Iz a DJ", 
-	"imageFile":"https://drive.google.com/open?id=1M7Uwe1FQwfxF7W9_6ggdCP8XA595bDnc",
+	"imageFile":"images/Iz A DJ.png",
 	"DateRecorded":"07-08-2018",
 	"Genre":"Progressive House"}
-]}
+]
