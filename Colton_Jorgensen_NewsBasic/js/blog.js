@@ -14,6 +14,7 @@ musicPage.onload = function(){
 			mixes += '<p class="thumbnail"><img src="' + data.mixes[i].imageFile+'"alt"' +data.mixes[i].media+'"></p>';
 			mixes += '<h3 class="h2">'+data.mixes[i].mixName+'"></h3>';
 			mixes += '</article>';
+			console.log(data.mixes[1].mixName);
 			
 			
 		}
@@ -23,6 +24,6 @@ musicPage.onload = function(){
 }
 
 
-musicPage.open('GET', 'https://ColtonJorgensen_ProjectAndPortfolioIII/zColton_Jorgensen_NewsBasic/mixDatabase.json',true);
-musicPage.send('null');
+musicPage.open('GET', 'https://raw.githubusercontent.com/csjorgensen/ColtonJorgensen_ProjectAndPortfolioIII/master/Colton_Jorgensen_NewsBasic/mixDatabase.json',true);
+musicPage.send("null");
 

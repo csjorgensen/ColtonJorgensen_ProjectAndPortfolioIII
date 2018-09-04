@@ -1,4 +1,4 @@
-var mixes : [
+ "mixes" : [
 	{"mixName": "Into The Groove", 
 	"imageFile":"images/intothegroove.png",
 	"DateRecorded":"01-25-2018",
