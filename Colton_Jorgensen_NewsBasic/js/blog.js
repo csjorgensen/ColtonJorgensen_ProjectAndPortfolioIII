@@ -6,7 +6,7 @@ musicPage.onload = function(){
 	
 	var data  = JSON.parse(musicPage.responseText);
 	
-	var placementPlace = document.querySelector('#mixes');
+	var placementPlace = document.querySelector('#blog');
 	if(placementPlace){
 		var mixes = '';
 		for (var i= 0; i<data.mixes.length;i++){

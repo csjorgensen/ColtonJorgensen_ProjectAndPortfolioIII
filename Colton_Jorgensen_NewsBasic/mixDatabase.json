@@ -1,4 +1,4 @@
- "mixes" : [
+ {"mixes": [
 	{"mixName": "Into The Groove", 
 	"imageFile":"images/intothegroove.png",
 	"DateRecorded":"01-25-2018",
@@ -11,4 +11,4 @@
 	"imageFile":"images/Iz A DJ.png",
 	"DateRecorded":"07-08-2018",
 	"Genre":"Progressive House"}
-]
+]}
