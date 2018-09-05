@@ -2,16 +2,19 @@
 	{"mixName": "Into The Groove", 
 	"imageFile":"images/into the groove.png",
 	 "description":"The first in the DJ Colton Jorgensen's series.",
+	 "BPM":128,
 	"DateRecorded":"01-25-2018",
 	"Genre":"House"},{
 	"mixName":"In Through the ear",
 	"imageFile":"images/In Through.png",
 		 "description":"The second in the DJ Colton Jorgensen's series.",
+		 "BPM":130,
 	"DateRecorded":"04-23-2018",
 	"Genre":"Tribal House"},
 	{"mixName": "Iz a DJ", 
 	"imageFile":"images/iz a dj.png",
 	  "description":"The third in the DJ Colton Jorgensen's series.",
+	  "BPM":132,
 	"DateRecorded":"07-08-2018",
 	"Genre":"Progressive House"}
 ]}

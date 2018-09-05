@@ -13,10 +13,14 @@ var data = JSON.parse(xml.responseText);
 			mixes += '<article>';
 			mixes += '<p class="thumbnail"><img src="' + data.mixes[i].imageFile+'"alt"' +data.mixes[i].imageFile+'"></p>';
 			mixes += '<h3 class="h3">'+data.mixes[i].mixName+'</h3>';
-			mixes += '<p class="body">'+"Date Recorded: "+data.mixes[i].DateRecorded+'</p>';
-			mixes += '<p class="body">'+"Genre: "+data.mixes[i].Genre+'</p>';
+			mixes += '<dt>Date Recorded: </dt>';
+			mixes += '<dd>'+data.mixes[i].DateRecorded+'</dd>';
+			mixes += '<dt>Genre: </dt>';
+			mixes += '<dd>'+data.mixes[i].Genre+'</dd>';
+			mixes += '<dt>Description </dt>';
+			mixes += '<dd>'+data.mixes[i].description+'</dd>';
 			mixes += '</article>';
-			console.log(data.mixes[1].mixName);
+		
 			
 			
 			
