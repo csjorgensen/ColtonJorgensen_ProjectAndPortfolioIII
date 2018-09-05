@@ -12,7 +12,7 @@ var data = JSON.parse(xml.responseText);
 		for (var i= 0; i<data.mixes.length;i++){
 			mixes += '<article>';
 			mixes += '<p class="thumbnail"><img src="' + data.mixes[i].imageFile+'"alt"' +data.mixes[i].imageFile+'"></p>';
-			mixes += '<h3 class="h3">'+data.mixes[i].mixName+'"></h3>';
+			mixes += '<h3 class="h3">'+data.mixes[i].mixName+'</h3>';
 			mixes += '</article>';
 			console.log(data.mixes[1].mixName);
 			
