@@ -1,0 +1,27 @@
+ {"imgGal": [
+	{"imgName": "pic1", 
+	"imageFile":"pic1.png",
+	 "description":"Pic 1 Description"
+	
+	},{
+	"imgName":"Pic2",
+	"imageFile":"pic2.png",
+		 "description":"Pic 2 Description"
+		
+	},
+	{"imgName": "Pic3", 
+	"imageFile":"pic3.png",
+	  "description":"Pic 3 Description."
+	  
+	},
+	 {"imgName": "Pic4", 
+	"imageFile":"pic4.png",
+	  "description":"Pic 4 Description."
+	  
+	},
+	 {"imgName": "Pic5", 
+	"imageFile":"pic5.png",
+	  "description":"Pic 5 Description."
+	  
+	}
+]}
