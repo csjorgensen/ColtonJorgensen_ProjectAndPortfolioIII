@@ -1,26 +1,26 @@
  {"imgGal": [
 	{"imgName": "pic1", 
-	"imageFile":"pic1.png",
+	"imageFile":"https://drive.google.com/open?id=1yQtMv8PUME7NrNE6mX5Any2f_DW_IxjE",
 	 "description":"Pic 1 Description"
 	
 	},{
 	"imgName":"Pic2",
-	"imageFile":"pic2.png",
+	"imageFile":"https://drive.google.com/open?id=1FQwGo6l0JmKCO2UDHl8aDvw11DZp36un",
 		 "description":"Pic 2 Description"
 		
 	},
 	{"imgName": "Pic3", 
-	"imageFile":"pic3.png",
+	"imageFile":"https://drive.google.com/open?id=1Luy_nHP0AlV_UgjdQYUL88RDXH5zAtAM",
 	  "description":"Pic 3 Description."
 	  
 	},
 	 {"imgName": "Pic4", 
-	"imageFile":"pic4.png",
+	"imageFile":"https://drive.google.com/open?id=1bwspc6ZQYMVonfJTSwoEIPD_1KLQ_KZu",
 	  "description":"Pic 4 Description."
 	  
 	},
 	 {"imgName": "Pic5", 
-	"imageFile":"pic5.png",
+	"imageFile":"https://drive.google.com/open?id=1YCQ1xhTYs2pNiyawaGimA_v7zw_BCd6D",
 	  "description":"Pic 5 Description."
 	  
 	}
