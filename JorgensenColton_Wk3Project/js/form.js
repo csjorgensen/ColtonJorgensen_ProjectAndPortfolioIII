@@ -1,4 +1,4 @@
-var contactSheet = document.querySelector('form');
+var form = document.querySelector('form');
 
 
 document.querySelector('h2').innerHTML = "CONTACT " + "<strong>DJ COLTON JORGENSEN</strong>";
@@ -10,32 +10,9 @@ document.querySelector('#email').placeholder = "Email";
 document.querySelector('#phone').placeholder = "Phone Number/SMS";
 document.querySelector('#message').placeholder = "Comment";
 
-function validateForm(event) {
-	"use strict";
-	event.preventDefault();
-
-
-	var form = document.querySelection('contactSheet');
-    var submit = document.querySelector('[type=submit]');
-	var inputs = document.querySelectorAll('required');
-	var valid = true;
-	for (var i = 0; i < inputs.length; i++) {
-		if (!inputs[i].value) {
-			valid = false;
-			submit.disabled=true;
-			
-		}
-
-		if (valid === true) {
-			submit = form.querySelector('[type=submit]');
-			submit.disabled = false;
-		}
-	}
-
-
 
 function validateRequired(event) {
-	event.preventDefault();
+	"use strict";
 	var target = event.target;
 	var parent = target.parentElement;
 	var error = '<label class="error">This field is required</label>';
@@ -43,7 +20,7 @@ function validateRequired(event) {
 	if (!target.value.length) {
 		if (!parent.querySelector('.error')) {
 			parent.insertAdjacentHTML('beforeend', error);
-			submit.disabled  = true;
+		
 
 		} else {
 
@@ -53,34 +30,34 @@ function validateRequired(event) {
 }
 	
 
-
+	
+var requiredFields = form.querySelectorAll('.required');
+for (var j = 0; j < requiredFields.length; j++) {
+	
+		requiredFields[j].addEventListener('blur', validateRequired);
+}
+		
 	function send(event) {
-
+"use strict";
+		
 		event.preventDefault();
-		var form = document.querySelector('conatctSheet');
-		var submitMessage = '<p>THANK YOU</p><p>Keep on Spinning!</p>';
+		var form = document.querySelector('form');
+		var submitMessage = '<p>THANK YOU...Keep on Spinning!</p>';
 
 		var target = event.target;
-		var disabled = target.classList.contains('.disabled');
+		var disabled = target.classList.contains('disabled');
 		if (disabled === false) {
 			form.innerHTML = submitMessage;
+	
 
 
 		}
 	}
-	
-var requiredFields = contactSheet.querySelectorAll('.required');
-	for (var j = 0; j < requiredFields.length; j++) {
-	
-		requiredFields[j].addEventListener('blur', validateRequired);}
+var submit = form.querySelector('[type=submit]');
 	submit.addEventListener('click', send);
-}
 
-var requiredFields = contactSheet.querySelectorAll('.required');
-	for (var j = 0; j < requiredFields.length; j++) {
-		requiredFields[j].addEventListener('input', validateForm);
-		}
-	
+
+
 
 
 
