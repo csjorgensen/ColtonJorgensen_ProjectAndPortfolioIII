@@ -15,9 +15,9 @@ function validateForm(event) {
 	event.preventDefault();
 
 
-	var form = document.querySelection('#contactSheet');
+	var form = document.querySelection('contactSheet');
     var submit = document.querySelector('[type=submit]');
-	var inputs = document.querySelectorAll.innerHTML;
+	var inputs = document.querySelectorAll('required');
 	var valid = true;
 	for (var i = 0; i < inputs.length; i++) {
 		if (!inputs[i].value) {
@@ -43,6 +43,7 @@ function validateRequired(event) {
 	if (!target.value.length) {
 		if (!parent.querySelector('.error')) {
 			parent.insertAdjacentHTML('beforeend', error);
+			submit.disabled  = true;
 
 		} else {
 
