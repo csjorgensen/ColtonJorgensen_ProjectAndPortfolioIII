@@ -1,9 +1,4 @@
-//page title
-
-var contactSheet = document.querySelector('#form');
-var submit = document.querySelector('[type=submit]');
-
-
+var contactSheet = document.querySelector('form');
 
 
 document.querySelector('h2').innerHTML = "CONTACT " + "<strong>DJ COLTON JORGENSEN</strong>";
@@ -15,14 +10,8 @@ document.querySelector('#email').placeholder = "Email";
 document.querySelector('#phone').placeholder = "Phone Number/SMS";
 document.querySelector('#message').placeholder = "Comment";
 
-
-
-
-
-
-
-
 function validateForm(event) {
+	"use strict";
 	event.preventDefault();
 
 
@@ -37,8 +26,8 @@ function validateForm(event) {
 			
 		}
 
-		if (valid == true) {
-			var submit = form.querySelector('[type=submit]');
+		if (valid === true) {
+			submit = form.querySelector('[type=submit]');
 			submit.disabled = false;
 		}
 	}
@@ -60,54 +49,39 @@ function validateRequired(event) {
 			parent.removeChild(parent.querySelector('.error'));
 		}
 	}
+}
+	
 
-
-	var requiredFields = contactSheet.querySelectorAll('.required');
-	for (var i = 0; i < requiredFields.length; i++) {
-		requiredFields[i].addEventListener('input', validateForm);
-		requiredFields[i].addEventListener('blur', validateRequired);
-	}
-
-	var email = document.getElementById('email');
-
-	email.addEventListener('input', function (event) {
-		if (email.validity.typeMismatch) {
-			email.setCustomValidity('error');
-		} else {
-			email.setCustomValidity('');
-		}
-	});
 
 	function send(event) {
 
 		event.preventDefault();
 		var form = document.querySelector('conatctSheet');
-		var errorMessage = '<p>THANK YOU</p><p>Keep on Spinning!</p>';
+		var submitMessage = '<p>THANK YOU</p><p>Keep on Spinning!</p>';
 
 		var target = event.target;
-		var required = target.classList.contains('.required');
-		if (required === false) {
-			form.innerHTML = errorMessage;
+		var disabled = target.classList.contains('.disabled');
+		if (disabled === false) {
+			form.innerHTML = submitMessage;
 
 
 		}
 	}
-
-	const emailField = document.getElementById('email');
-
-	emailField.addEventListener('keyup', function (event) {
-		isValidEmail = emailField.checkValidity();
-
-		if (isValidEmail) {
-			submit.disabled === false;
-		} else {
-			submit.disabled === true;
-		}
-	});
-
-
-}
-
-
+	
+var requiredFields = contactSheet.querySelectorAll('.required');
+	for (var j = 0; j < requiredFields.length; j++) {
+	
+		requiredFields[j].addEventListener('blur', validateRequired);}
 	submit.addEventListener('click', send);
 }
+
+var requiredFields = contactSheet.querySelectorAll('.required');
+	for (var j = 0; j < requiredFields.length; j++) {
+		requiredFields[j].addEventListener('input', validateForm);
+		}
+	
+
+
+
+	
+	
