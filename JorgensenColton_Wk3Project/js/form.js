@@ -13,34 +13,42 @@ document.querySelector('#message').placeholder = "Comment";
 
 function validateRequired(event) {
 	"use strict";
+	
 	var target = event.target;
 	var parent = target.parentElement;
 	var error = '<label class="error">This field is required</label>';
 
 	if (!target.value.length) {
-		if (!parent.querySelector('.error')) {
+		if (!parent.querySelector('.required')) {
 			parent.insertAdjacentHTML('beforeend', error);
 		
 
 		} else {
 
 			parent.removeChild(parent.querySelector('.error'));
+			submit.disabled=false;
 		}
 	}
-}
 	
+
+}
 
 	
 var requiredFields = form.querySelectorAll('.required');
 for (var j = 0; j < requiredFields.length; j++) {
-	
+
 		requiredFields[j].addEventListener('blur', validateRequired);
+	
 }
+
+
+	
 		
 	function send(event) {
 "use strict";
 		
 		event.preventDefault();
+		
 		var form = document.querySelector('form');
 		var submitMessage = '<p>THANK YOU...Keep on Spinning!</p>';
 
@@ -48,14 +56,18 @@ for (var j = 0; j < requiredFields.length; j++) {
 		var disabled = target.classList.contains('disabled');
 		if (disabled === false) {
 			form.innerHTML = submitMessage;
-	
-
-
 		}
 	}
-var submit = form.querySelector('[type=submit]');
-	submit.addEventListener('click', send);
 
+
+
+
+
+
+var submit = form.querySelector('[type=submit]');
+
+
+submit.addEventListener('click', send);
 
 
 
