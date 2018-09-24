@@ -11,57 +11,22 @@
 
 		<!-- Cascading StyleSheets -->
 		
-		<link rel="stylesheet" href="CSS/final.css">
+		<link rel="stylesheet" href="css/final.css">
 
 		
-	<!--[if lt IE 9]>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-		<![endif]-->
-	<script language="javascript"  type="text/javascript">
+
 	
-		
-		import React from 'react';
-import ReactDOM from 'react-dom';
-
-class Users extends React.Component{
-  constructor(props) {
-     super(props)
-     this.state = {
-       nodes: []
-     }
-     this.load()
-  }
-
-  load() {
-    const url = 'https://randomuser.me/api/?results=5';
-    return fetch(url)
-    .then(response => {
-       return response.json();
-    })
-    .then(({results}) => {
-        let nodes = results.map(({name:{first}}) => <li>{first}</li>)
-        this.setState({nodes})
-     });
-   }
-
-   render() {
-     return <ul>{this.state.nodes}</ul>
-   }
- }
-
- ReactDOM.render(
-     <Users />,
-     document.getElementById('main')
- );
-
-		
- </script>
 
 </head>
 
 <body>
-	
-	<h1>Authors</h1>
-  <ul id="authors"></ul>
+	<article>
+<section>
+	<h1>Available DJs</h1>
+	<p></p>
+  <ul id="djs"></ul>
+<li></li>
+	</section></article>
+	<script src="JS/Final.js"  ></script>
 </body>
 	</html>
