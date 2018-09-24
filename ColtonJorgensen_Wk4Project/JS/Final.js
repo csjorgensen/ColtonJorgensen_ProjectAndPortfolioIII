@@ -2,8 +2,8 @@ function createNode(element) {
   return document.createElement(element);
 }
 
-function append(parent, el) {
-  return parent.appendChild(el);
+function append(parent, element) {
+  return parent.appendChild(element);
 }
 
 var ul = document.getElementById('djs');
@@ -16,7 +16,7 @@ fetch(url).then(function (resp) {
     var li = createNode('li'),
         img = createNode('img'),
         span = createNode('span');
-    img.src = dj.picture.medium;
+    img.src = dj.picture.large;
     span.innerHTML = ' '+dj.name.first + ' ' + dj.name.last;
     append(li, img);
     append(li, span);
