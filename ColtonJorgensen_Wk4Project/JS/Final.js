@@ -13,10 +13,10 @@ fetch(url).then(function (resp) {
 }).then(function (data) {
   var djs = data.results;
   return djs.map(function (dj) {
-    var li = createNode('li'),
-        img = createNode('img'),
+    var li = createNode('li');
+        img = createNode('img');
         span = createNode('span');
-    img.src = dj.picture.large;
+    img.src = dj.picture.medium;
     span.innerHTML = ' '+dj.name.first + ' ' + dj.name.last;
     append(li, img);
     append(li, span);
